@@ -1,7 +1,7 @@
 import tkinter as tk
 from db_connection import *
 
-def open_show_gui():
+def open_show_gui() -> None:
 
     show_gui = tk.Tk()
     show_gui.title('Show db')       

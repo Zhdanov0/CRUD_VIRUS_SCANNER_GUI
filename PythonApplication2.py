@@ -27,7 +27,7 @@ cur.execute('''PREPARE update AS
 cur.execute('''PREPARE delete AS
                DELETE FROM viruses WHERE extension = $1 and line = $2;''')
 
-def exit():
+def exit() -> None:
     con.close()
     win.destroy()
 

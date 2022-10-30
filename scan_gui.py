@@ -5,9 +5,9 @@ import datetime
 import os
 import tkinter as tk
 
-def open_scan_gui():
+def open_scan_gui() -> None:
 
-    def scanning():
+    def scanning() -> None:
 
         #making cache here
         
@@ -25,9 +25,9 @@ def open_scan_gui():
         
         path = scan_ent1_sc.get()
         
-        def scan(path):
+        def scan(path: str) -> None:
 
-            def defuse():
+            def defuse() -> None:
 
                 for line in infected_files:
 

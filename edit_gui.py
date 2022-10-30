@@ -1,9 +1,9 @@
 import tkinter as tk
 from db_connection import *
 
-def open_edit_gui():
+def open_edit_gui() -> None:
 
-    def check_number():
+    def check_number() -> bool:
 
         try:
             index = int(edit_ent.get())
@@ -21,9 +21,9 @@ def open_edit_gui():
         return True
 
     
-    def edit():
+    def edit() -> None:
 
-        def update_line():
+        def update_line() -> None:
 
             extension_new = edit_func_ent1.get()
             line_new =  edit_func_ent2.get()
@@ -63,7 +63,7 @@ def open_edit_gui():
             edit_func_btn1.place(x=175, y=163)
 
 
-    def delete():
+    def delete() -> None:
 
         if check_number():
 

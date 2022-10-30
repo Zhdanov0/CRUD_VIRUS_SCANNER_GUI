@@ -3,7 +3,7 @@ import psycopg2
 con = psycopg2.connect(
       database="project", 
       user="postgres", 
-      password="", 
+      password="25122002Ibrb", 
       host="127.0.0.1"
     )
 

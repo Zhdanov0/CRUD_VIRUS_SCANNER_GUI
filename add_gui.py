@@ -1,9 +1,9 @@
 import tkinter as tk
 from db_connection import *
 
-def open_add_gui():
+def open_add_gui() -> None:
 
-    def addLine():
+    def addLine() -> None:
 
         extension = ent1_line.get()
         line = ent2_line.get()

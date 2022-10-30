@@ -1,6 +1,6 @@
 class Trie:
 
-    def __init__(self, extension):
+    def __init__(self, extension: str):
         self.root = {}
         self.extension = extension
 
